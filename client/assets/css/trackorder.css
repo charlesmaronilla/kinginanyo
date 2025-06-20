@@ -1,0 +1,190 @@
+/* Track Order Page Styles */
+:root {
+    --primary-color: #0f4c75;
+    --secondary-color: #ffd700;
+    --success-color: #4caf50;
+    --warning-color: #ff9800;
+    --danger-color: #f44336;
+    --text-color: #333;
+    --light-gray: #f5f5f5;
+    --border-color: #e0e0e0;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: rgba(0, 43, 92, 0.9);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.track-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #186479;
+    font-size: 24px;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #186479;
+    font-weight: 500;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+button {
+    background: #186479;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #1e7b94;
+}
+
+.order-status {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.order-status h3 {
+    color: #186479;
+    margin: 0 0 15px;
+    font-size: 18px;
+}
+
+.order-status p {
+    margin: 8px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.order-status strong {
+    color: #186479;
+}
+
+.stall-section {
+    margin: 20px 0;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.stall-section h5 {
+    color: #186479;
+    margin: 0 0 10px;
+    font-size: 16px;
+}
+
+.order-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.order-item p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-status {
+    color: #186479;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #186479;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1e7b94;
+}
+
+.countdown-container {
+    background: #f8f9fa;
+    border: 2px solid #186479;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.countdown-container p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+#countdown {
+    font-weight: bold;
+    color: #186479;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .track-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}
